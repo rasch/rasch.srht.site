@@ -1,0 +1,13 @@
+image: alpine/latest
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: rasch.srht.site
+tasks:
+- project-demos: |
+    cd "$site"
+    sh project-demos.sh
+- package: |
+    cd "$site"
+    tar -cvz site > ../site.tar.gz
+- upload: |
+    acurl --fail "https://pages.sr.ht/publish/$site" --form content=@site.tar.gz
