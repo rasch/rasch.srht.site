@@ -18,3 +18,18 @@ mkdir -p site/bf/demo
 
 curl --silent --output site/bf/demo/index.html \
   https://git.sr.ht/~rasch/bf/blob/main/examples/index.html
+
+# rpsls
+mkdir -p site/rpsls/demo
+
+curl --silent --output site/rpsls/demo/index.html \
+  https://git.sr.ht/~rasch/rpsls/blob/main/index.html
+
+curl --silent --output site/rpsls/demo/index.js \
+  https://git.sr.ht/~rasch/rpsls/blob/main/index.js
+
+curl --silent --output site/rpsls/demo/script.js \
+  https://git.sr.ht/~rasch/rpsls/blob/main/script.js
+
+curl --silent --output site/rpsls/demo/style.css \
+  https://git.sr.ht/~rasch/rpsls/blob/main/style.css
